@@ -1,6 +1,6 @@
 defined in `<vector>`
 
-Vectors are just dynamic [arrays](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FContainers%2Farray). Vectors use contiguous storage locations for their elements, which means that their elements can be accessed using offsets on regular pointer to its elements, and just as efficiently as in arrays. 
+[Vectors](https://en.cppreference.com/w/cpp/container/vector) are just dynamic [arrays](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FContainers%2Farray). Vectors use contiguous storage locations for their elements, which means that their elements can be accessed using offsets on regular pointer to its elements, and just as efficiently as in arrays. 
 
 #### Complexity of common operation
 - random access - O(1).
