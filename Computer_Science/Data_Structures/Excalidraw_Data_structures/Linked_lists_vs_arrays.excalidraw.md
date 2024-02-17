@@ -50,7 +50,7 @@ next ^e2Ij5nmk
 
 next ^Ud4SEFvV
 
-null ^glNp8rSH
+NULL ^glNp8rSH
 
 head ^n04kEqnY
 
@@ -62,6 +62,8 @@ head ^n04kEqnY
 
 Linked lists contains the value as well as the 
 address to the next element in linked list. ^H7ysL3J6
+
+NULL ^dMJHCyae
 
 %%
 # Drawing
@@ -965,7 +967,7 @@ address to the next element in linked list. ^H7ysL3J6
 			"containerId": "NUAHqYROR64PmHnReHRzO",
 			"originalText": "1",
 			"lineHeight": 1.25,
-			"baseline": 18
+			"baseline": 17
 		},
 		{
 			"type": "ellipse",
@@ -1036,12 +1038,12 @@ address to the next element in linked list. ^H7ysL3J6
 			"containerId": "YR-PtIbAI5qayu3Yahg7p",
 			"originalText": "2",
 			"lineHeight": 1.25,
-			"baseline": 18
+			"baseline": 17
 		},
 		{
 			"type": "ellipse",
-			"version": 113,
-			"versionNonce": 1864789590,
+			"version": 114,
+			"versionNonce": 1191629326,
 			"isDeleted": false,
 			"id": "tE-cGnMjF4nzdEC1XmwvW",
 			"fillStyle": "solid",
@@ -1070,9 +1072,13 @@ address to the next element in linked list. ^H7ysL3J6
 				{
 					"type": "text",
 					"id": "qTJH29Kx"
+				},
+				{
+					"id": "jUAdTcjeHw0OMgpk1OTln",
+					"type": "arrow"
 				}
 			],
-			"updated": 1707847947369,
+			"updated": 1708101812124,
 			"link": null,
 			"locked": false
 		},
@@ -1111,7 +1117,7 @@ address to the next element in linked list. ^H7ysL3J6
 			"containerId": "tE-cGnMjF4nzdEC1XmwvW",
 			"originalText": "3",
 			"lineHeight": 1.25,
-			"baseline": 18
+			"baseline": 17
 		},
 		{
 			"type": "arrow",
@@ -1159,8 +1165,8 @@ address to the next element in linked list. ^H7ysL3J6
 		},
 		{
 			"type": "arrow",
-			"version": 65,
-			"versionNonce": 472778029,
+			"version": 66,
+			"versionNonce": 22800018,
 			"isDeleted": false,
 			"id": "8KDsWV6pL49nY5R9s1zOC",
 			"fillStyle": "solid",
@@ -1182,7 +1188,7 @@ address to the next element in linked list. ^H7ysL3J6
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1707973700418,
+			"updated": 1708101798660,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -1315,7 +1321,7 @@ address to the next element in linked list. ^H7ysL3J6
 			"containerId": "fpUQ5SoPA0IztuFKZ4eqH",
 			"originalText": "1",
 			"lineHeight": 1.25,
-			"baseline": 18
+			"baseline": 17
 		},
 		{
 			"type": "rectangle",
@@ -1391,8 +1397,8 @@ address to the next element in linked list. ^H7ysL3J6
 		},
 		{
 			"type": "arrow",
-			"version": 86,
-			"versionNonce": 614882797,
+			"version": 88,
+			"versionNonce": 1094511122,
 			"isDeleted": false,
 			"id": "NZFdC-lp6aB1Fhiq4Qhdq",
 			"fillStyle": "solid",
@@ -1402,11 +1408,11 @@ address to the next element in linked list. ^H7ysL3J6
 			"opacity": 100,
 			"angle": 0,
 			"x": -312,
-			"y": 127.46939024882025,
+			"y": 127.48223783785349,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 81,
-			"height": 1.5621931253160426,
+			"height": 1.5542054434016848,
 			"seed": 1122522762,
 			"groupIds": [],
 			"frameId": null,
@@ -1414,7 +1420,7 @@ address to the next element in linked list. ^H7ysL3J6
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1707973700418,
+			"updated": 1708101798661,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1437,7 +1443,7 @@ address to the next element in linked list. ^H7ysL3J6
 				],
 				[
 					81,
-					1.5621931253160426
+					1.5542054434016848
 				]
 			]
 		},
@@ -1786,8 +1792,8 @@ address to the next element in linked list. ^H7ysL3J6
 		},
 		{
 			"type": "text",
-			"version": 32,
-			"versionNonce": 1941388109,
+			"version": 37,
+			"versionNonce": 77098318,
 			"isDeleted": false,
 			"id": "glNp8rSH",
 			"fillStyle": "solid",
@@ -1800,24 +1806,24 @@ address to the next element in linked list. ^H7ysL3J6
 			"y": 108.75,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 34,
+			"width": 53,
 			"height": 25,
 			"seed": 374148298,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1707983113586,
+			"updated": 1708101825835,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
 			"fontFamily": 1,
-			"text": "null",
-			"rawText": "null",
+			"text": "NULL",
+			"rawText": "NULL",
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "null",
+			"originalText": "NULL",
 			"lineHeight": 1.25,
 			"baseline": 17
 		},
@@ -1968,6 +1974,91 @@ address to the next element in linked list. ^H7ysL3J6
 			"originalText": "Linked lists contains the value as well as the \naddress to the next element in linked list.",
 			"lineHeight": 1.25,
 			"baseline": 42
+		},
+		{
+			"id": "jUAdTcjeHw0OMgpk1OTln",
+			"type": "arrow",
+			"x": -152.09228515625006,
+			"y": -75.36745198567706,
+			"width": 30.555582682291686,
+			"height": 56.4814453125,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 1643763666,
+			"version": 40,
+			"versionNonce": 1040939982,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1708101812124,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					30.555582682291686,
+					56.4814453125
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": {
+				"elementId": "tE-cGnMjF4nzdEC1XmwvW",
+				"focus": -0.26796008663197424,
+				"gap": 1
+			},
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
+		{
+			"id": "dMJHCyae",
+			"type": "text",
+			"x": -136.35148111979169,
+			"y": -2.2193400065104356,
+			"width": 53,
+			"height": 25,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 985489486,
+			"version": 13,
+			"versionNonce": 554272914,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1708101821014,
+			"link": null,
+			"locked": false,
+			"text": "NULL",
+			"rawText": "NULL",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"baseline": 17,
+			"containerId": null,
+			"originalText": "NULL",
+			"lineHeight": 1.25
 		}
 	],
 	"appState": {
@@ -1985,8 +2076,8 @@ address to the next element in linked list. ^H7ysL3J6
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 498.83333333333337,
-		"scrollY": 768.25,
+		"scrollX": 518.0210774739584,
+		"scrollY": 504.9102783203125,
 		"zoom": {
 			"value": 0.75
 		},

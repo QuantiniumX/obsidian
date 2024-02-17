@@ -4,7 +4,7 @@
 **Conditions for Binary Search**
 1. The array must be sorted.
 
-[Diagram](obsidian://open?vault=obsidian&file=Data_Structures%2FExcalidraw%2FBinary%20Search.excalidraw)
+[Diagram](obsidian://open?vault=obsidian&file=Computer_Science%2FCommon_Algorithms%2FExcalidraw%2FBinary%20Search.excalidraw)
 
 ### Implementation:-
 

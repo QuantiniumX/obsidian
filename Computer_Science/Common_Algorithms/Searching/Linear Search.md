@@ -1,6 +1,6 @@
 **Linear Search** is defined as a sequential search algorithm that starts at one end and goes through each element of a list until the desired element is found, otherwise the search continues till the end of the data set.
 
-[Diagram](obsidian://open?vault=obsidian&file=Data_Structures%2FExcalidraw%2FLinear%20Search.excalidraw)
+[Diagram](obsidian://open?vault=obsidian&file=Computer_Science%2FCommon_Algorithms%2FExcalidraw%2FLinear%20Search.excalidraw)
 
 #### Implementation:-
 
