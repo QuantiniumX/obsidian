@@ -1,8 +1,10 @@
 It is a linear data structure that can be visualized as a **chain** with different **nodes connected**, where each **node** represents a different element. The difference between arrays and linked lists is that, unlike arrays, the elements are not stored at a contiguous location.
 
-[Linked Lists VS Arrays](obsidian://open?vault=obsidian&file=Data_Structures%2FExcalidraw%2FLinked_lists_vs_arrays.excalidraw)
+[[Linked_lists_vs_arrays.excalidraw]]
 
 A linked list is a data structure containing two crucial pieces of information, the first being the **data** and the other being **the pointer to the next element**. The **‘head’** is the **first node**, and the **‘tail’** is the **last node** in a linked list.
+
+[[Linked_lists.excalidraw]]
 
 Linked Lists are of two types :-
 
@@ -39,3 +41,4 @@ int main(){
 - In class Node, data contains the value and the pointer contains the address to the next node.
 - We define a constructor to assign values to the new node.
 - A **new** keyword is used to dynamically allocate memory to a node with data as arr[0].
+- 

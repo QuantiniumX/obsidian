@@ -1,4 +1,4 @@
-The C++ Standard Template Library (STL) is a collection of algorithms, data structures, and other components that can be used to simplify the development of C++ programs. The STL provides a range of containers, such as vectors, lists, and maps, as well as algorithms for searching, sorting and manipulating data.
+The C the development of C++ programs. The STL provides a range of contain++ Standard Template Library (STL) is a collection of algorithms, data structures, and other components that can be used to simplifyers, such as vectors, lists, and maps, as well as algorithms for searching, sorting and manipulating data.
 
 ### Some of the key components of the STL include:
 1. Containers: The STL provides a range of containers, such as vector, list, map, set, and stack, which can be used to store and manipulate data.
@@ -9,24 +9,24 @@ The C++ Standard Template Library (STL) is a collection of algorithms, data stru
 
 #### STL has 4 components:
 
-- [Algorithms](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FAlgorithm)
+- [[Algorithm]]
 - Containers
-	- [Vector](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FContainers%2FVector)
-	- [List](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FContainers%2FList)
-	- [deque](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FContainers%2Fdeque)
-	- [array](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FContainers%2Farray)
-	- [forward_list](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FContainers%2Fforward_list)
-	- [queue](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FContainers%2Fqueue)
-	- [priority_queue](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FContainers%2Fpriority_queue)
-	- [stack](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FContainers%2Fstack)
-	- [set](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FContainers%2Fset)
-	- [multiset](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FContainers%2Fmultiset)
-	- [map](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FContainers%2Fmap)
-	- [multimap](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FContainers%2Fmultimap)
-	- [unordered_set](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FContainers%2Funordered_set)
-	- [unordered_muliset](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FContainers%2Funordered_multiset)
-	- [unordered_map](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FContainers%2Funordered_map)
-	- [unordered_multimap](obsidian://open?vault=obsidian&file=Programming%2FC%2B%2B%20STL%2FContainers%2Funordered_multimap)
+	- [[vector]]
+	- [[List]]
+	- [[deque]]
+	- [[array]]
+	- [[forward_list]]
+	- [[queue]]
+	- [[priority_queue]]
+	- [[C++/C++ STL/Containers/stack]]
+	- [[set]]
+	- [[multiset]]
+	- [[map]]
+	- [[multimap]]
+	- [[unordered_set]]
+	- [[unordered_multiset]]
+	- [[unordered_map]]
+	- [[unordered_multimap]]
 - Functors
 - Iterators
 
