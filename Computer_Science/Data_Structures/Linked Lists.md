@@ -2,7 +2,7 @@ It is a linear data structure that can be visualized as a **chain** with differe
 
 [[Linked_lists_vs_arrays.excalidraw]]
 
-A linked list is a data structure containing two crucial pieces of information, the first being the **data** and the other being **the pointer to the next element**. The **‘head’** is the **first node**, and the **‘tail’** is the **last node** in a linked list.
+A linked list is a data structure containing two crucial pieces of information, the first being the **data** and the other being **the pointer toSubtree the next element**. The **‘head’** is the **first node**, and the **‘tail’** is the **last node** in a linked list.
 
 [[Linked_lists.excalidraw]]
 
@@ -41,4 +41,4 @@ int main(){
 - In class Node, data contains the value and the pointer contains the address to the next node.
 - We define a constructor to assign values to the new node.
 - A **new** keyword is used to dynamically allocate memory to a node with data as arr[0].
-- 
+![[linked_list.c]]
