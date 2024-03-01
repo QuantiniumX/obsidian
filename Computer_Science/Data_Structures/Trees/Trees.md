@@ -15,3 +15,5 @@ The **topmost node of the tree** is called the **root**, and the nodes below it 
 - ***Internal node:*** A node with at least one child is called Internal Node.
 - ***Neighbor of a Node:*** Parent or child nodes of that node are called neighbors of that node.
 - ***Sub-tree***: Any node of the tree along with its descendant.
+
+## Types of Trees
