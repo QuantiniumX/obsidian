@@ -1,0 +1,2 @@
+-[ ] Make a book reading app that can give you the meaning to a word kinda like gd
+-[ ] Make earphone that will activate noise cancellation on horn
