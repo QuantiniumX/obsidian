@@ -2,6 +2,6 @@
 
 The basic concept can be illustrated by thinking of your data set as a **stack of plates or books** where you can only take the top item of the stack in order to remove things from it.
 
-![[stack_implementaion_using_array.cpp]]
+![[implementing_stack.c]]
 
 ![[stack.png]]

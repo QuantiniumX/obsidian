@@ -4,9 +4,10 @@ The main advantage of using a hash function is we can access an element in O(1) 
 
 **Hash Function** is just a mathematical formula that will convert an input to an integer that is related to the the index in the array where the value is stored.
 
-### Properties 
 
-1. Uniformity - A good hash function must map the keys as evenly as possible i.e. that there should be no collisions if possible.
-2. Deterministic - A hash function must always generate the same hash value for a given input value.
-3. Low Cost - The cost of executing a hash function must be small so that using the hashing technique becomes preferable over other traditional approaches.
+### Collision Resolution techniques
+1. Open addressing - collisions are handled by looking for the following empty space in the table. If the first slot is already taken, the hash function is applied to the subsequent slots until one is left empty.
+2. Seperate chaining - In separate chaining, a linked list of objects that hash to each slot in the hash table is present. Two keys are included in the linked list if they hash to the same slot.
+3. Robin hood hashing - The algorithm compares the distance between the slot and the occupied slot of the two keys if a new key hashes to an already-occupied slot. The existing key gets swapped out with the new one if it is closer to its ideal slot. This brings the existing key closer to its ideal slot.
 
+![[implementing_hash_table.c]]

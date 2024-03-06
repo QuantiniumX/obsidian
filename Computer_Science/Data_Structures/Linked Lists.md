@@ -41,4 +41,4 @@ int main(){
 - In class Node, data contains the value and the pointer contains the address to the next node.
 - We define a constructor to assign values to the new node.
 - A **new** keyword is used to dynamically allocate memory to a node with data as arr[0].
-![[linked_list.c]]
+![[implementing_doubly_linked_list.c]]

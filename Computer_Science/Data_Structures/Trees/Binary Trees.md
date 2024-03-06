@@ -1,5 +1,6 @@
 >A **binary tree** data structure is is a hierarchical data structures in which each node have at most two children referred to as left child and right child..
 
+![[implementing_binary_tree.c]]
 ### Properties
 1. The maximum no of nodes at level 'l' is given by 2$^l$. So at the top the total possible nodes is 2$^0$ = 1, and 2$^1$ = 2 at level 1 which are the two children nodes.
 2. The maximum no of nodes in a binary tree of height 'h' is given by 2$^h$ - 1. Max nodes of Binary tree of height 3 is 2$^3$ - 1 = 8 - 1 = 7.
