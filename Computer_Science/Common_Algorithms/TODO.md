@@ -30,9 +30,9 @@
 - [x] One Dimensional arrays
 	- [x] Linear Search
 	- [x] Binary Search
-	- [ ] Finding min, max and avg
-	- [ ] inserting items at a position 
-	- [ ] removing from a position
+	- [x] Finding min, max and avg
+	- [x] inserting items at a position 
+	- [x] removing from a position
 - [ ] Two dimensional arrays
 - [ ] Higher dimensional arrays
 - [ ] Triangular array
@@ -63,6 +63,7 @@
 - [ ] Mergesort
 - [ ] Counting Sort
 - [ ] Bucket Sort
+- [ ] Introsort
 
 ## Searching 
 - [ ] Linear Search 
