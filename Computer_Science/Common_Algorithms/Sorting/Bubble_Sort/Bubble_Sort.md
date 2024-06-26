@@ -30,6 +30,8 @@ Now, the array is already sorted, but the algorithm does not know if it is compl
     ( 1 2 4 5 8 ) → ( 1 2 4 5 8 )
 ```
 
+![](https://youtu.be/Cq7SMsQBEUw?feature=shared)
+
 ## Pseudocode implementation
 Pseudocode for [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort#Pseudocode_implementation)
 ```
@@ -77,3 +79,9 @@ It's complexity is quadratic as due to two iteration on the arrays.
 - **Complexity** - O(1)
 
 It's complexity is constant as it doesn't need more space than which the array has been allocated in. It just moves the elements in that space only.
+
+
+## Extras
+- **[Use](https://en.wikipedia.org/wiki/Bubble_sort#Use)**
+- **[Variations](https://en.wikipedia.org/wiki/Bubble_sort#Variations)
+
