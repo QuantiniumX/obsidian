@@ -55,20 +55,20 @@
 	- [ ] Specialized Queues
 
 ## Sorting
-- [ ] Insertion Sort
-- [ ] Selection Sort
-- [ ] Bubble Sort
+- [x] Insertion Sort
+- [x] Selection Sort
+- [x] Bubble Sort
 - [ ] Heapsort
-- [ ] Quicksort
-- [ ] Mergesort
+- [x] Quicksort
+- [x] Mergesort
 - [ ] Counting Sort
 - [ ] Bucket Sort
 - [ ] Introsort
 
 ## Searching 
-- [ ] Linear Search 
-- [ ] Binary Search
-- [ ] Interpolation Search
+- [x] Linear Search 
+- [x] Binary Search
+- [x] Interpolation Search
 
 ## Hash Tables
 - [ ] Implementing Hash table
