@@ -2,6 +2,8 @@ A **tree** data structure is a hierarchical structure that is used to represent 
 
 The **topmost node of the tree** is called the **root**, and the nodes below it are called the **child nodes**. Each node can have multiple child nodes, and these child nodes can also have their own child nodes, forming a recursive structure.![[Tree_data_structure.png]]
 
+![Tree](https://storage.googleapis.com/qvault-webapp-dynamic-assets/course_assets/SotCWXU.png)
+
 ## Basic Terminologies In Tree Data Structure:
 
 - ***Parent Node:*** The node which is a predecessor of a node is called the parent node of that node. ****{B}**** is the parent node of ****{D, E}****.
