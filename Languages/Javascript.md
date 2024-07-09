@@ -1,7 +1,7 @@
 Javascript / Java (same thing) is the language used to make websites by making them dynamic.
 - [Just-in-time-compiled](https://www.howtogeek.com/devops/what-is-just-in-time-jit-compilation/#what-does-jit-compilation-do) - Compiling of program while it's being executed.
 - [Prototype-based](https://developer.mozilla.org/en-US/docs/Glossary/Prototype-based_programming)
-- Single-threaded
+ Single-threaded
 - Dynamic language
 
 ``` Javascript
@@ -23,8 +23,7 @@ It's null. Most programming languages have it. null values are 'falsy'
 - 0 - number zero
 - '' = empty string 
 
-### undefined
-poor man's null.
+### undefined poor man's null.
 
 **undefined** means the variable was never assigned a value.
 **null** is just same but we assign it explicitly. It doesn't mean we can't assign undefined.
@@ -90,3 +89,139 @@ for (let i of list) {
   console.log(i); // 4, 5, 6
 }
 ```
+
+### Objects 
+JS has a object type. They are variables that can hold more complex information than basic types like String, Number and Boolean.
+``` Javascript
+const apple = {
+  name: 'Apple',
+  radius: 2,
+  color: 'red',
+}
+```
+
+**Syntactic Sugar**
+
+``` Javascript
+const name = 'Apple'
+const radius = 2
+const color = 'red'
+const apple = {
+  name,
+  radius,
+  color,
+}
+
+// Similar to 
+const name = 'Apple'
+const radius = 2
+const color = 'red'
+const apple = {
+  name: name,
+  radius: radius,
+  color: color,
+}
+```
+#### Object Methods
+Javascript Object have methods. Methods are functions that are defined inside an object. They can access and change the properties of the object in question.
+
+``` Javascript
+const person = {
+  firstName: 'Lane',
+  lastName: 'Wagner',
+  getFullName() {
+    return this.firstName + ' ' + this.lastName
+  }
+}
+
+console.log(person.getFullName())
+```
+
+Methods can mutate the properties of their object.
+
+``` Javascript
+const tree = {
+  height: 256,
+  color: 'green',
+  cut() {
+    this.height /= 2
+  }
+}
+
+tree.cut()
+console.log(tree.height)
+// prints 128
+```
+
+### this
+``` Javascript
+const author = {
+  firstName: 'Lane',
+  lastName: 'Wagner',
+  getName() {
+    return `${this.firstName} ${this.lastName}`
+  }
+}
+console.log(author.getName())
+// Prints: Lane Wagner
+```
+
+``` Javascript
+const author = {
+  firstName: 'Lane',
+  lastName: 'Wagner',
+  getName: () => {
+    return `${this.firstName} ${this.lastName}`
+  }
+}
+console.log(author.getName())
+// Prints: undefined undefined
+// because the parent scope (the scope outside of the author object)
+// never defined .firstName and .lastName properties
+```
+
+As we can see when we use the **fat arrow function**  syntax, you sometimes get a different this object. 
+
+==this== points to the object on which it is called.
+
+This is due to property how **fat arrow functions** work. With a fat arrow function ==this== will always refer to the same object that its parent scope would. 
+
+Essentially ==this's == value depends on which context it appears - function, class or global. 
+
+### Errors
+Gonna catch deez errors.
+
+It's try catch finally. finally is rarely used so we generally use try-catch. 
+
+``` Javascript
+try {
+  //code to run
+} catch (err) {
+  //if err occurs log it out
+  console.log(err.message);
+} finally {
+  // It will always run. [OPTIONAL]
+}
+```
+
+Throwing our own error. If we know something bad will happen if the input is of something we know is entered, we can throw an error.
+``` Javascript
+throw new Error('something went wrong');
+```
+
+### Runtime
+A runtime environment is where your program runs. Since JS can run in many places outside browsers so different runtimes are made.
+
+#### Different runtime
+- A Browser
+- Nodejs
+- A web worker within a browser
+- Deno.js
+- Bun and many more.
+
+#### Whats different in all these runtime
+- Performance
+- API - you can use Canvas api to render graphics in browser but can't do those things in node or bun that don't support those.
+- Global object - In browsers, global object is ==window== but in node it's ==global==.
+
+[JS Runtimes](https://www.freecodecamp.org/news/javascript-engine-and-runtime-explained/)
