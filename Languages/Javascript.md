@@ -1,7 +1,13 @@
+---
+id: Javascript
+aliases: []
+tags: []
+---
+
 Javascript / Java (same thing) is the language used to make websites by making them dynamic.
 - [Just-in-time-compiled](https://www.howtogeek.com/devops/what-is-just-in-time-jit-compilation/#what-does-jit-compilation-do) - Compiling of program while it's being executed.
 - [Prototype-based](https://developer.mozilla.org/en-US/docs/Glossary/Prototype-based_programming)
- Single-threaded
+- Single-threaded
 - Dynamic language
 
 ``` Javascript
