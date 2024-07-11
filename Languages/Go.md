@@ -575,3 +575,208 @@ v := <-ch // receive data from ch channel.
 This reads and removes value from channel ch and saves it to v.
 
 A [deadlock](https://yourbasic.org/golang/detect-deadlock/#:~:text=yourbasic.org%2Fgolang,look%20at%20this%20simple%20example.) is when a group of goroutines are all blocking so none of them can operate.This is a common bug that you need to watch out for in concurrent programming.
+
+Empty structs are often used a ==tokens== in Go programs. In this context, a token is a unary value. We don't care what is passed through, we care if it is passed or not.
+
+We can block and wait until something is sent on channel using 
+```c
+<-ch // this will block until it pops a single item off the channel, then continue, discarding an item.
+```
+
+### Buffered Channels
+Channels can optionally be buffered.
+We can provide a buffer length as the second argument to ==make()== to create a buffered channel.
+```c
+ch := make(chan int, 100)
+```
+
+A buffered channel only allows us to send data and only block channels when the buffer is full and receiving block only when the buffer is empty.
+
+### Closing Channels
+Channels can be explicitly closed by a sender:
+```c
+ch := make(chan int)
+
+// do some stuff with the channel
+
+close(ch)
+```
+
+We can check if a channel is closed 
+```c
+v, ok := <-ch
+```
+
+### Range
+Channels can be ranged over. In this the channel will receive the value over the channel (blocking at each iteration if nothing new is there) and will exit only when the channel is closed.
+
+```c
+for item := range ch {
+    // item is the next value received from the channel
+}
+```
+
+### Select
+Sometimes we have a single goroutine and we want to process the data in the order it comes in.
+
+A ==select== statement is used to listen to multiple channels at the same time.
+
+```c
+select {
+case i, ok := <- chInts:
+    fmt.Println(i)
+case s, ok := <- chStrings:
+    fmt.Println(s)
+default: 
+    // receiving from ch would block
+    // so do something else
+}
+```
+The ==default== case in a ==select== statement executes immediately if no other channel has a value ready.A default case stops the ==select== statement from blocking.
+
+### Tickers
+- [time.Tick()](https://golang.org/pkg/time/#Tick) returns a channel that sends a value on a given interval.
+- [time.After()](https://golang.org/pkg/time/#After) sends a value once after the duration has passed.
+- [time.Sleep()](https://golang.org/pkg/time/#Sleep) blocks the current goroutine for specific amount of time.
+
+### Read only channels
+A channel can be marked as read-only by casting it from a ==chan== to a ==<-chan== type.
+```c
+func main() {
+    ch := make(chan int)
+    readCh(ch)
+}
+
+func readCh(ch <-chan int) {
+    // ch can only be read from
+    // in this function
+}
+```
+
+### Write only channels
+We can similarly make then write only by shifting the arrow.
+```c
+func writeCh(ch chan<- int) {
+    // ch can only be written to
+    // in this function
+}
+```
+
+### Extra Stuff
+#### A send to a nil channel blocks forever
+```c
+var c chan string // c is nil
+c <- "let's get started" // blocks
+```
+
+#### A receive from a nil channel blocks forever
+```c
+var c chan string // c is nil
+fmt.Println(<-c) // blocks
+```
+
+#### A send to a closed channel panics
+```c
+var c = make(chan int, 100)
+close(c)
+c <- 1 // panic: send on closed channel
+```
+
+#### A receive from a closed channel returns the zero value immediately
+```c
+var c = make(chan int, 100)
+close(c)
+fmt.Println(<-c) // 0
+```
+
+## Mutexes - 
+Mutually excludes different threads from accessing the same data at the same time.
+Mutexes allow us to lock access to data to control the access of data by goroutines.
+
+Go std library provides a built-in implementation of a mutex with the sync.Mutex type and its two methods
+- [Lock()](https://golang.org/pkg/sync/#Mutex.Lock)
+- [Unlock()](https://golang.org/pkg/sync/#Mutex.Unlock)
+
+```c
+func protected(){
+    mu.Lock() // 
+    defer mu.Unlock() // use defer to ensure that we never forget to unlock.
+    // the rest of the function is protected
+    // any other calls to `mu.Lock()` will block
+}
+```
+
+### Maps are not thread-safe.
+Map are not safe for concurrent use. If you have multiple go routines accessing the same map, at least one of them is writing to the map. We must lock the map with a mutex.
+
+### RW Mutex
+The standard library also exposes a [sync.RWMutex](https://golang.org/pkg/sync/#RWMutex) and it has these methods :
+- [RLock()](https://golang.org/pkg/sync/#RWMutex.RLock)
+- [RUnlock()](https://golang.org/pkg/sync/#RWMutex.RUnlock)
+
+It can help with performance if we have ==read intensive== task
+
+Maps are cool with concurrent reads as we are not mutating data so more than one goroutines can read a map at the same time.
+
+## Generics
+As go doesn't have classes so it was impossible to reuse code that does the same thing.
+
+As of Go v1.18, support for [generics](https://blog.boot.dev/golang/how-to-use-golangs-generics/) was released.
+
+### Type parameters
+Put simply, generics allow us to use variables to refer to specific types.
+```c
+func splitAnySlice[T any](s []T) ([]T, []T) {
+    mid := len(s)/2
+    return s[:mid], s[mid:]
+}
+```
+
+### Constraints
+Constraints are just interfaces that allow us to write generics that only operate within the constraints of a given interface type.
+```c
+type stringer interface {
+    String() string
+}
+
+func concat[T stringer](vals []T) string {
+    result := ""
+    for _, val := range vals {
+        // this is where the .String() method
+        // is used. That's why we need a more specific
+        // constraint instead of the any constraint
+        result += val.String()
+    }
+    return result
+}
+```
+
+### Interface type lists
+We can now simply list a bunch of types to get a new interface/constraint.
+
+```c
+// Ordered is a type constraint that matches any ordered type.
+// An ordered type is one that supports the <, <=, >, and >= operators.
+type Ordered interface {
+    ~int | ~int8 | ~int16 | ~int32 | ~int64 |
+        ~uint | ~uint8 | ~uint16 | ~uint32 | ~uint64 | ~uintptr |
+        ~float32 | ~float64 |
+        ~string
+}
+```
+
+### Generic type naming
+```c
+func splitAnySlice[T any](s []T) ([]T, []T) {
+    mid := len(s)/2
+    return s[:mid], s[mid:]
+}
+```
+==T== is just a variable name and can be anything. ==T== has just become a convention like ==i== for for loops.
+
+```c
+func splitAnySlice[MyAnyType any](s []MyAnyType) ([]MyAnyType, []MyAnyType) {
+    mid := len(s)/2
+    return s[:mid], s[mid:]
+}
+```
