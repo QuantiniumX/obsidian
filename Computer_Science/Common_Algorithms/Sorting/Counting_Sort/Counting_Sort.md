@@ -1,3 +1,9 @@
+---
+id: Counting_Sort
+aliases: []
+tags: []
+---
+
 **Counting Sort** is sorting algorithm that operates by counting the number of occuurences of the object that posses distinct key value, and applying the prefix sum on those counts to determine the position of each key value in the output sequence.
 
 It is only suitable for direct use in situations where the variation in keys is not significantly greater than the number of items.
@@ -29,9 +35,9 @@ function CountingSort(input, k)
 ### Analysis
 
 #### Time Complexity
-- **Best Case** - O(n + u)
+- **Best Case** - O(n + u) -  Ω(n)
 - **Average Case** - O(n + u)
-- **Worst Case** - O(n + u)
+- **Worst Case** - O(n + u) 
 
 #### Space Complexity
 - O(n + u) - Due to the output and the count sort taking the extra space.
