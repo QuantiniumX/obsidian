@@ -1,3 +1,9 @@
+---
+id: Merge_Sort
+aliases: []
+tags: []
+---
+
 **Merge Sort** is a recursive sorting algorithm and it's quite bit faster than bubble sort. It is a [stable sort](https://en.wikipedia.org/wiki/Category:Stable_sorts). It is a [divide and conquer algorithm](https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm) that was invented by [John von Neumann](https://en.wikipedia.org/wiki/John_von_Neumann)
 
 ## Divide and Conquer
